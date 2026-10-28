@@ -1,6 +1,7 @@
 package homework.h06;
 
 // https://leetcode.com/problems/valid-palindrome/description/
+
 public class T2 {
 
   public static void main(String[] args) {

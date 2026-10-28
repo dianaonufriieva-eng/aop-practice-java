@@ -1,6 +1,7 @@
 package homework.h07;
 
 // https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/description/
+
 public class T2 {
   public int numberOfSteps(int num) {
     int steps = 0;

@@ -1,6 +1,7 @@
 package homework.h05;
 
 // https://leetcode.com/problems/maximum-product-difference-between-two-pairs/description/
+
 public class T1 {
 
   public static void main(String[] args) {

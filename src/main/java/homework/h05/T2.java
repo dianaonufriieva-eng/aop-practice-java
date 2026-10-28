@@ -1,6 +1,7 @@
 package homework.h05;
 
 // https://leetcode.com/problems/squares-of-a-sorted-array/description/
+
 import java.util.Arrays;
 
 public class T2 {
