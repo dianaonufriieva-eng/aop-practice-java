@@ -1,9 +1,8 @@
 package homework.h03;
 
 // https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/
-
 public class T2 {
-  public int differenceOfSums(int n, int m) {
+  public static int differenceOfSums(int n, int m) {
     int num1 = 0;
     int num2 = 0;
 

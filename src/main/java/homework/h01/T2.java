@@ -1,14 +1,9 @@
 package homework.h01;
 
-// https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/description/
+// https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/
 
 public class T2 {
   public static int countOdds(int low, int high) {
     return (high + 1) / 2 - low / 2;
-  }
-
-  public static void main(String[] args) {
-    System.out.println(countOdds(3, 7));
-    System.out.println(countOdds(8, 10));
   }
 }

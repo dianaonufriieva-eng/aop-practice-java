@@ -1,9 +1,8 @@
 package homework.h03;
 
-// https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/description/
-
+// https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/
 public class T1 {
-  public double average(int[] salary) {
+  public static double average(int[] salary) {
     int min = salary[0];
     int max = salary[0];
     int sum = 0;

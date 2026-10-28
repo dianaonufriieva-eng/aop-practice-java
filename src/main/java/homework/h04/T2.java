@@ -1,9 +1,8 @@
 package homework.h04;
 
 // https://leetcode.com/problems/number-complement/
-
 public class T2 {
-  public int findComplement(int num) {
+  public static int findComplement(int num) {
     int mask = 0;
     int temp = num;
 

@@ -1,9 +1,8 @@
 package homework.h07;
 
-// https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/description/
-
+// https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
 public class T2 {
-  public int numberOfSteps(int num) {
+  public static int numberOfSteps(int num) {
     int steps = 0;
     while (num > 0) {
       if (num % 2 == 0) {

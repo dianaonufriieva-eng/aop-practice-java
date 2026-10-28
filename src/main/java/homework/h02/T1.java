@@ -1,9 +1,8 @@
 package homework.h02;
 
-// https://leetcode.com/problems/add-digits/description/
-
+// https://leetcode.com/problems/add-digits/
 public class T1 {
-  public int addDigits(int num) {
+  public static int addDigits(int num) {
     while (num >= 10) {
       int sum = 0;
       while (num > 0) {

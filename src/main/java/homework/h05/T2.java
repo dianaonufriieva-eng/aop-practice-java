@@ -1,19 +1,7 @@
 package homework.h05;
 
-// https://leetcode.com/problems/squares-of-a-sorted-array/description/
-
-import java.util.Arrays;
-
+// https://leetcode.com/problems/squares-of-a-sorted-array/
 public class T2 {
-
-  public static void main(String[] args) {
-    int[] nums1 = {-4, -1, 0, 3, 10};
-    System.out.println("Результат 1: " + Arrays.toString(sortedSquares(nums1)));
-
-    int[] nums2 = {-7, -3, 2, 3, 11};
-    System.out.println("Результат 2: " + Arrays.toString(sortedSquares(nums2)));
-  }
-
   public static int[] sortedSquares(int[] nums) {
     int n = nums.length;
     int[] result = new int[n];

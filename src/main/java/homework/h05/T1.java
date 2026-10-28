@@ -1,17 +1,7 @@
 package homework.h05;
 
-// https://leetcode.com/problems/maximum-product-difference-between-two-pairs/description/
-
+// https://leetcode.com/problems/maximum-product-difference-between-two-pairs/
 public class T1 {
-
-  public static void main(String[] args) {
-    int[] nums1 = {5, 6, 2, 7, 4};
-    System.out.println("Результат 1: " + maxProductDifference(nums1));
-
-    int[] nums2 = {4, 2, 5, 9, 7, 4, 8};
-    System.out.println("Результат 2: " + maxProductDifference(nums2));
-  }
-
   public static int maxProductDifference(int[] nums) {
     int max1 = Integer.MIN_VALUE;
     int max2 = Integer.MIN_VALUE;
