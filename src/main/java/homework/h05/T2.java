@@ -1,26 +1,26 @@
 package homework.h05;
 
 // https://leetcode.com/problems/squares-of-a-sorted-array/
+
 public class T2 {
   public static int[] sortedSquares(int[] nums) {
-    int n = nums.length;
-    int[] result = new int[n];
+    int[] squares = new int[nums.length];
     int left = 0;
-    int right = n - 1;
+    int right = nums.length - 1;
 
-    for (int i = n - 1; i >= 0; i--) {
-      int squareLeft = nums[left] * nums[left];
-      int squareRight = nums[right] * nums[right];
+    for (int index = nums.length - 1; index >= 0; index--) {
+      int leftSquare = nums[left] * nums[left];
+      int rightSquare = nums[right] * nums[right];
 
-      if (squareLeft > squareRight) {
-        result[i] = squareLeft;
+      if (leftSquare > rightSquare) {
+        squares[index] = leftSquare;
         left++;
       } else {
-        result[i] = squareRight;
+        squares[index] = rightSquare;
         right--;
       }
     }
 
-    return result;
+    return squares;
   }
 }
