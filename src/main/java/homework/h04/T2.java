@@ -1,16 +1,11 @@
 package homework.h04;
 
 // https://leetcode.com/problems/number-complement/
+
 public class T2 {
-  public static int findComplement(int num) {
-    int mask = 0;
-    int temp = num;
+  public static int findComplement(int number) {
+    int mask = (Integer.highestOneBit(number) << 1) - 1;
 
-    while (temp > 0) {
-      mask = (mask << 1) | 1;
-      temp >>= 1;
-    }
-
-    return num ^ mask;
+    return ~number & mask;
   }
 }

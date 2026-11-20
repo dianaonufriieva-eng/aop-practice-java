@@ -1,8 +1,9 @@
 package homework.h04;
 
 // https://leetcode.com/problems/hamming-distance/
+
 public class T1 {
-  public static int hammingDistance(int x, int y) {
-    return Integer.bitCount(x ^ y);
+  public static int hammingDistance(int first, int second) {
+    return Integer.bitCount(first ^ second);
   }
 }
