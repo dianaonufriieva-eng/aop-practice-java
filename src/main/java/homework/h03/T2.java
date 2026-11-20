@@ -1,19 +1,20 @@
 package homework.h03;
 
 // https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/
-public class T2 {
-  public static int differenceOfSums(int n, int m) {
-    int num1 = 0;
-    int num2 = 0;
 
-    for (int i = 1; i <= n; i++) {
-      if (i % m != 0) {
-        num1 += i;
+public class T2 {
+  public static int differenceOfSums(int limit, int divisor) {
+    int nonDivisibleSum = 0;
+    int divisibleSum = 0;
+
+    for (int value = 1; value <= limit; value++) {
+      if (value % divisor == 0) {
+        divisibleSum += value;
       } else {
-        num2 += i;
+        nonDivisibleSum += value;
       }
     }
 
-    return num1 - num2;
+    return nonDivisibleSum - divisibleSum;
   }
 }

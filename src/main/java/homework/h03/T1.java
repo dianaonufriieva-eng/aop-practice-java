@@ -1,22 +1,23 @@
 package homework.h03;
 
 // https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/
+
 public class T1 {
   public static double average(int[] salary) {
-    int min = salary[0];
-    int max = salary[0];
-    int sum = 0;
+    int minimumSalary = salary[0];
+    int maximumSalary = salary[0];
+    int totalSalary = 0;
 
-    for (int s : salary) {
-      if (s < min) {
-        min = s;
+    for (int salaryValue : salary) {
+      if (salaryValue < minimumSalary) {
+        minimumSalary = salaryValue;
       }
-      if (s > max) {
-        max = s;
+      if (salaryValue > maximumSalary) {
+        maximumSalary = salaryValue;
       }
-      sum += s;
+      totalSalary += salaryValue;
     }
 
-    return (double) (sum - min - max) / (salary.length - 2);
+    return (double) (totalSalary - minimumSalary - maximumSalary) / (salary.length - 2);
   }
 }
