@@ -4,20 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 // https://leetcode.com/problems/fizz-buzz/
+
 public class T1 {
-  public static List<String> fizzBuzz(int n) {
+  public static List<String> fizzBuzz(int limit) {
     List<String> answer = new ArrayList<>();
-    for (int i = 1; i <= n; i++) {
-      if (i % 15 == 0) {
+
+    for (int value = 1; value <= limit; value++) {
+      if (value % 15 == 0) {
         answer.add("FizzBuzz");
-      } else if (i % 3 == 0) {
+      } else if (value % 3 == 0) {
         answer.add("Fizz");
-      } else if (i % 5 == 0) {
+      } else if (value % 5 == 0) {
         answer.add("Buzz");
       } else {
-        answer.add(String.valueOf(i));
+        answer.add(Integer.toString(value));
       }
     }
+
     return answer;
   }
 }
