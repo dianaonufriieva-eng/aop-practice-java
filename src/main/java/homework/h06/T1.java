@@ -1,21 +1,22 @@
 package homework.h06;
 
 // https://leetcode.com/problems/valid-anagram/
+
 public class T1 {
-  public static boolean isAnagram(String s, String t) {
-    if (s.length() != t.length()) {
+  public static boolean isAnagram(String first, String second) {
+    if (first.length() != second.length()) {
       return false;
     }
 
-    int[] count = new int[26];
+    int[] counts = new int[26];
 
-    for (int i = 0; i < s.length(); i++) {
-      count[s.charAt(i) - 'a']++;
-      count[t.charAt(i) - 'a']--;
+    for (int index = 0; index < first.length(); index++) {
+      counts[first.charAt(index) - 'a']++;
+      counts[second.charAt(index) - 'a']--;
     }
 
-    for (int c : count) {
-      if (c != 0) {
+    for (int count : counts) {
+      if (count != 0) {
         return false;
       }
     }

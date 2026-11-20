@@ -1,20 +1,21 @@
 package homework.h06;
 
 // https://leetcode.com/problems/valid-palindrome/
+
 public class T2 {
-  public static boolean isPalindrome(String s) {
+  public static boolean isPalindrome(String text) {
     int left = 0;
-    int right = s.length() - 1;
+    int right = text.length() - 1;
 
     while (left < right) {
-      while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
+      while (left < right && !Character.isLetterOrDigit(text.charAt(left))) {
         left++;
       }
-      while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
+      while (left < right && !Character.isLetterOrDigit(text.charAt(right))) {
         right--;
       }
 
-      if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) {
+      if (Character.toLowerCase(text.charAt(left)) != Character.toLowerCase(text.charAt(right))) {
         return false;
       }
 
